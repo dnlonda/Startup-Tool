@@ -22,20 +22,22 @@ def read_config_files():
     return applications, processes
 
 applications, processes = read_config_files()
+mainApplication = processes[1]
+processes = processes[3:]
+applications = applications[1:]
 
 #************************* logic ***************************************
 
+
+
 i = 1
 while i == 1:
-    if is_program_running("iRacingUI.exe"):  # For Windows
-        print("iRacing is running")
+    if is_program_running(mainApplication):  # For Windows
+        print("Main application is running")
         numProcesses = len(processes)
         for j in range(numProcesses):
             if not is_program_running(processes[j]):
-                print("programs are not running, starting chrome")
+                print("Programs are not running, starting chrome")
                 os.startfile(applications[j])
-
-    else:
-        print("iracing is not running")
             
 
