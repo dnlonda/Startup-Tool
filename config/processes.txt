@@ -1,3 +1,5 @@
 Main Process:
-
+iRacingUI.exe
 Auxillary Processes:
+chrome.exe
+SimHubWPF.exe

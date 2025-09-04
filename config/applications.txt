@@ -1,1 +1,5 @@
 File Locations of Auxillary Applications (.exe files):
+C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe
+C:\\Program Files (x86)\\SimHub\\SimHubWPF.exe
+C:\Program Files (x86)\iRacing\ui\iRacingUI.exe
+C:\Program Files\Google\Chrome\Application\chrome.exe

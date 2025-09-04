@@ -1,8 +1,6 @@
 import psutil
 import os
 
-#************************* Functions *************************************
-
 def is_program_running(process_name):
     for proc in psutil.process_iter(['name']):
         if proc.info['name'] == process_name:
@@ -26,18 +24,11 @@ mainApplication = processes[1]
 processes = processes[3:]
 applications = applications[1:]
 
-#************************* logic ***************************************
-
-
-
 i = 1
 while i == 1:
-    if is_program_running(mainApplication):  # For Windows
-        print("Main application is running")
+    if is_program_running(mainApplication): 
         numProcesses = len(processes)
         for j in range(numProcesses):
             if not is_program_running(processes[j]):
-                print("Programs are not running, starting chrome")
                 os.startfile(applications[j])
             
-
